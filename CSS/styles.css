@@ -1,0 +1,110 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+#mainHeader {
+  background: linear-gradient(to right, #007BFF, #00C6FF);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Event card styles */
+.eventCard {
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Style for main CTA button (example) */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+/* Links */
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: green;
+}
+a:active {
+  color: red;
+}
+
+/* List styles */
+.navList {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+.navList li {
+  margin: 0 10px;
+}
+
+/* Table styling */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {
+  border: 1px solid #999;
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Form field highlight */
+.highlight {
+  outline: 2px solid #007BFF;
+  padding: 5px;
+}
+
+/* News article with multi-column */
+.news p {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navList {
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
